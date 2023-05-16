@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular distância de Carro</title>
+    <style type="text/css">
+        body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  form {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="submit"] {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    background-color: #0066cc;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0052a3;
+  }
+
+  p {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 20px;
+  }
+ </style> 
+</head>
+<body>
+  <p>CS50</p>
+  <p>Projeto final</p>
+  <p>Calculadora de distância</p>
+    <form method="get" action="/routes">
+        <h2>Origem</h2>
+        <input type="text" name="rua" placeholder="Rua">
+        <input type="text" name="num" placeholder="Número">
+        <input type="text" name="cidade" placeholder="Cidade">
+        <input type="text" name="estado" placeholder="Estado">
+
+        <h2>Destino</h2>
+        <input type="text" name="rua_d" placeholder="Rua">
+        <input type="text" name="num_d" placeholder="Número">
+        <input type="text" name="cidade_d" placeholder="Cidade">
+        <input type="text" name="estado_d" placeholder="Estado">
+
+        <input type="submit" value="Calcular">
+    </form>    
+</body>
+</html>
